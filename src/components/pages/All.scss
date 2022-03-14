@@ -1,0 +1,134 @@
+.all {
+    display: flex;
+
+    &__title {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        width: 700px;
+        height: 155px;
+        margin-bottom: 10px;
+        padding: 5px 0 5px 0;
+        border-bottom: 1px solid #dfdfdf;
+    }
+
+    &__user {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__date {
+        font-size: 12px;
+        line-height: 16px;
+        color: #777777;
+        margin-bottom: 18px;
+    }
+
+    &__bolt {
+        margin-right: 8px;
+    }
+
+    &__link {
+        font-size: 19px;
+        line-height: 28px;
+        color: #474747;
+    }
+
+    &__link:first-letter {
+        text-transform: capitalize;
+    }
+
+    &__link:hover {
+        opacity: 0.7;
+    }
+
+    &__link:active {
+        opacity: 0.3;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-top: 18px;
+    }
+
+    &__item-img {
+        margin-right: 8px;
+    }
+
+    &__read {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .all {
+        margin-left: 0;
+
+        &__list {
+            width: 900px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .all {
+
+        &__list {
+            width: 700px;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .all {
+        &__list {
+            width: 360px;
+            height: 155px;
+            margin-bottom: 0;
+            padding: 0;
+        }
+
+        &__user {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__date {
+            margin-bottom: 15px;
+        }
+
+        &__bolt {
+            margin-right: 3px;
+        }
+
+        &__link {
+            font-size: 14px;
+            line-height: 23px;
+        }
+
+        &__item {
+            margin-top: 8px;
+        }
+
+        &__item-img {
+            margin-right: 3px;
+        }
+
+        &__read {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .all {
+
+        &__list {
+            width: 300px;
+        }
+    }
+}

@@ -1,0 +1,124 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+
+    &__button {
+        background: #ffba9d;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 15px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 33px;
+        color: #000000;
+    }
+
+    &__sitenav {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__sitenav-link {
+        font-size: 16px;
+        line-height: 21px;
+        color: #9a9a9a;
+    }
+
+    &__sitenav-link:hover {
+        opacity: 0.6;
+    }
+
+    &__sitenav-link:active {
+        opacity: 0.3;
+    }
+
+    &__sitenav-link--active {
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: underline;
+        color: #3d3d3d;
+    }
+
+    &__form {
+        display: flex;
+    }
+
+    &__input {
+        width: 216px;
+        height: 40px;
+        border: none;
+        background: #f4f4f4;
+        border-radius: 3px;
+        padding: 14px;
+        color: #474747;
+    }
+
+    &__button {
+        width: 40px;
+        height: 40px;
+        padding-left: 13px;
+        border: none;
+    }
+
+    &__button:hover {
+        opacity: 0.6;
+    }
+
+    &__button:active {
+        opacity: 0.3;
+    }
+
+    &__modal-btn {
+        border: none;
+        background: #fff;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .header {
+        display: block;
+
+        &__sitenav {
+            display: none;
+        }
+
+        &__item {
+            margin-bottom: 33px;
+            justify-content: space-between;
+        }
+
+        &__modal-btn {
+            display: block;
+        }
+
+        &__input {
+            width: 1000px;
+            height: 40px;
+            border: none;
+            background: #f4f4f4;
+            border-radius: 3px;
+            padding: 14px;
+            color: #474747;
+        }
+
+        &__button {
+            width: 40px;
+            height: 40px;
+            padding-left: 13px;
+            border: none;
+        }
+    }
+}

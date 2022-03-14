@@ -1,0 +1,49 @@
+.modal {
+    position: absolute;
+    z-index: 1;
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    padding: 15px;
+
+    &__item {
+        display: flex;
+        margin-bottom: 100px;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        border: none;
+        background-color: #fff;
+    }
+
+    &__content {
+        text-align: center;
+    }
+
+    &__list {
+        margin-bottom: 50px;
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 21px;
+        color: #9a9a9a;
+    }
+
+    &__link:hover {
+        opacity: 0.6;
+    }
+
+    &__link:active {
+        opacity: 0.3;
+    }
+
+    &__link--active {
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: underline;
+        color: #3d3d3d;
+    }
+}
